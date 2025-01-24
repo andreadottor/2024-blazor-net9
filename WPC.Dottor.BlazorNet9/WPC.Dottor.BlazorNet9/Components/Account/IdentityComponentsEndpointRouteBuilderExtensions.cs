@@ -6,9 +6,9 @@ using Microsoft.AspNetCore.Http.Extensions;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Primitives;
-using WPC.Dottor.BlazorNet9.Components.Account.Pages;
-using WPC.Dottor.BlazorNet9.Components.Account.Pages.Manage;
-using WPC.Dottor.BlazorNet9.Data;
+using Dottor.BlazorNet9.Components.Account.Pages;
+using Dottor.BlazorNet9.Components.Account.Pages.Manage;
+using Dottor.BlazorNet9.Data;
 
 namespace Microsoft.AspNetCore.Routing
 {

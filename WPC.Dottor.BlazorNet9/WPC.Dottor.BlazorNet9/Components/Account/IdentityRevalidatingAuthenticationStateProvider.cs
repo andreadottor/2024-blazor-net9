@@ -3,9 +3,9 @@ using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Components.Server;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
-using WPC.Dottor.BlazorNet9.Data;
+using Dottor.BlazorNet9.Data;
 
-namespace WPC.Dottor.BlazorNet9.Components.Account
+namespace Dottor.BlazorNet9.Components.Account
 {
     // This is a server-side AuthenticationStateProvider that revalidates the security stamp for the connected user
     // every 30 minutes an interactive circuit is connected.

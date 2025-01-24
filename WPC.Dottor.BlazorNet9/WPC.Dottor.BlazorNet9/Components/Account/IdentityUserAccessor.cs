@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Identity;
-using WPC.Dottor.BlazorNet9.Data;
+using Dottor.BlazorNet9.Data;
 
-namespace WPC.Dottor.BlazorNet9.Components.Account
+namespace Dottor.BlazorNet9.Components.Account
 {
     internal sealed class IdentityUserAccessor(UserManager<ApplicationUser> userManager, IdentityRedirectManager redirectManager)
     {

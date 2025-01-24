@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using WPC.Dottor.BlazorNet9.Components;
-using WPC.Dottor.BlazorNet9.Components.Account;
-using WPC.Dottor.BlazorNet9.Data;
+using Dottor.BlazorNet9.Components;
+using Dottor.BlazorNet9.Components.Account;
+using Dottor.BlazorNet9.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -98,7 +98,7 @@ app.MapStaticAssets();
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode()
     .AddInteractiveWebAssemblyRenderMode()
-    .AddAdditionalAssemblies(typeof(WPC.Dottor.BlazorNet9.Client._Imports).Assembly);
+    .AddAdditionalAssemblies(typeof(Dottor.BlazorNet9.Client._Imports).Assembly);
 
 // Add additional endpoints required by the Identity /Account Razor components.
 app.MapAdditionalIdentityEndpoints();

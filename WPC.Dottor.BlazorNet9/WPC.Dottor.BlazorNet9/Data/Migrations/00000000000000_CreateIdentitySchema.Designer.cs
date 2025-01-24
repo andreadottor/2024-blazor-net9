@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using WPC.Dottor.BlazorNet9.Data;
+using Dottor.BlazorNet9.Data;
 
 #nullable disable
 
-namespace WPC.Dottor.BlazorNet9.Migrations
+namespace Dottor.BlazorNet9.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("00000000000000_CreateIdentitySchema")]
@@ -25,7 +25,7 @@ namespace WPC.Dottor.BlazorNet9.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("WPC.Dottor.BlazorNet9.Data.ApplicationUser", b =>
+            modelBuilder.Entity("Dottor.BlazorNet9.Data.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -234,7 +234,7 @@ namespace WPC.Dottor.BlazorNet9.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("WPC.Dottor.BlazorNet9.Data.ApplicationUser", null)
+                    b.HasOne("Dottor.BlazorNet9.Data.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -243,7 +243,7 @@ namespace WPC.Dottor.BlazorNet9.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("WPC.Dottor.BlazorNet9.Data.ApplicationUser", null)
+                    b.HasOne("Dottor.BlazorNet9.Data.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -258,7 +258,7 @@ namespace WPC.Dottor.BlazorNet9.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("WPC.Dottor.BlazorNet9.Data.ApplicationUser", null)
+                    b.HasOne("Dottor.BlazorNet9.Data.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -267,7 +267,7 @@ namespace WPC.Dottor.BlazorNet9.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("WPC.Dottor.BlazorNet9.Data.ApplicationUser", null)
+                    b.HasOne("Dottor.BlazorNet9.Data.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)

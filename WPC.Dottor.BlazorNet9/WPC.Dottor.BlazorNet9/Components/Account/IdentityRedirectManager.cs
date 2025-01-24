@@ -1,7 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using Microsoft.AspNetCore.Components;
 
-namespace WPC.Dottor.BlazorNet9.Components.Account
+namespace Dottor.BlazorNet9.Components.Account
 {
     internal sealed class IdentityRedirectManager(NavigationManager navigationManager)
     {

@@ -1,4 +1,4 @@
-﻿namespace WPC.Dottor.BlazorNet9.Client.Components;
+﻿namespace Dottor.BlazorNet9.Client.Components;
 
 using Microsoft.AspNetCore.Components;
 

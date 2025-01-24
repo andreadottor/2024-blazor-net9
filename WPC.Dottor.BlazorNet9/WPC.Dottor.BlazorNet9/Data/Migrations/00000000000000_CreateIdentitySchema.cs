@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace WPC.Dottor.BlazorNet9.Migrations
+namespace Dottor.BlazorNet9.Migrations
 {
     /// <inheritdoc />
     public partial class CreateIdentitySchema : Migration
